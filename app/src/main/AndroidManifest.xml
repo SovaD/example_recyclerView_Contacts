@@ -13,10 +13,10 @@
         android:theme="@style/Theme.Example_recyclerView_Contacts"
         tools:targetApi="31">
         <activity
-            android:name=".activities.ItemActivity"
+            android:name=".activities.AddActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.AddActivity"
+            android:name=".activities.ItemActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

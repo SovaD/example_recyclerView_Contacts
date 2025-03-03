@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
+    android:layout_margin="20dp"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.SearchView
@@ -30,7 +30,7 @@
         android:layout_alignParentBottom="true"
         android:backgroundTint="@android:color/transparent"
         android:scaleType="fitCenter"
-        android:src="@android:drawable/ic_menu_add"
-        app:tint="@color/marigold" />
+        android:src="@android:drawable/ic_input_add"
+        app:tint="@color/purple" />
 
 </RelativeLayout>

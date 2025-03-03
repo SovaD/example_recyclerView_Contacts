@@ -1,4 +1,8 @@
-package com.example.example_recyclerview_contacts.entities;public class Person {
+package com.example.example_recyclerview_contacts.entities;
+
+import java.io.Serializable;
+
+public class Person implements Serializable {
     String name;
     String email;
     String image;

@@ -1,7 +1,10 @@
 package com.example.example_recyclerview_contacts.services;
 
+import android.os.Parcelable;
+
 import com.example.example_recyclerview_contacts.entities.Person;
 
+import java.io.Serializable;
 import java.util.List;
 
 public interface PeopleService {

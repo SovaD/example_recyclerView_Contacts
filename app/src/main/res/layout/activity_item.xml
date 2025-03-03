@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardCornerRadius="20dp"
-    app:cardBackgroundColor="@color/lavender"
-    app:cardElevation="30dp"
+    app:cardBackgroundColor="@color/beige"
     android:layout_marginVertical="4dp"
     tools:context=".activities.ItemActivity">
 
@@ -29,21 +28,21 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tName"
                 android:textSize="24sp"
-                android:textColor="@color/marigold"
+                android:textColor="@color/navy"
                 android:layout_marginBottom="4dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/tRelate"
                 android:textSize="20sp"
-                android:textColor="@color/midnight"
+                android:textColor="@color/teal"
                 android:layout_marginBottom="4dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/tEmail"
                 android:textSize="20sp"
-                android:textColor="@color/midnight"
+                android:textColor="@color/teal"
                 android:layout_marginBottom="4dp"/>
 
         </LinearLayout>

@@ -25,6 +25,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     Context context;
     List<Person> people;
 
+    private OnClickListener onClickListener;
     public MyAdapter(Context context, List<Person> people) {
         this.context = context;
         this.people = people;
@@ -59,6 +60,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         catch (Exception e){
             Toast.makeText(context,"Cannot load an image",Toast.LENGTH_SHORT).show();
         }
+        holder.imageView.setOnClickListener(view->{
+            if (onClickListener!=null){
+                onClickListener.onClick(position);
+            }
+
+        });
     }
 
     @Override
@@ -66,6 +73,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         return people.size();
     }
 
+    public void setOnClickListener(OnClickListener onClickListener){
+        this.onClickListener = onClickListener;
+    }
     public class MyViewHolder extends RecyclerView.ViewHolder {
         TextView tName, tEmail, tRelate;
         ImageView imageView;
@@ -77,6 +87,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             tName = itemView.findViewById(R.id.tName);
             tEmail = itemView.findViewById(R.id.tEmail);
             tRelate = itemView.findViewById(R.id.tRelate);
+
+
+            itemView.setOnClickListener(view -> {
+                if (onClickListener!=null){
+                    onClickListener.onClick(getAdapterPosition());
+                }
+
+            });
         }
     }
 }

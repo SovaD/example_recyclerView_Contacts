@@ -25,7 +25,7 @@ public class PeopleServiceImpl implements PeopleService {
 
     @Override
     public boolean edit(Person person, Person editedPerson) {
-        if (get(editedPerson.getEmail()) != null)
+        if (!person.getEmail().equals(editedPerson.getEmail()) && get(editedPerson.getEmail()) != null)
             return false;
         for (Person p : people) {
             if (p.getEmail().equals(person.getEmail())) {
